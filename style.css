@@ -1,28 +1,30 @@
 body {
-  background-color: #121212; /* Dark background */
-  color: white; /* Light text */
-  font-family: Arial, sans-serif; /* Optional: You can choose your favorite font */
-}
-
-h1 {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   text-align: center;
-  font-size: 3em;
-  margin-top: 20px;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
   padding: 20px;
 }
 
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
 .gallery img {
+  max-width: 300px;
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s;
 }
 
 .gallery img:hover {
